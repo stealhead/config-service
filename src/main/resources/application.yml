@@ -2,11 +2,15 @@ spring:
   application:
     name: config-service
   profiles:
-    active: native
+    active: local
   cloud:
     config:
       server:
-        native:
-          search-locations: /Users/gang/workspace/self-microservice/conf
+        git:
+          uri: https://github.com/stealhead/config-repo.git
+          searchPaths:
+            - '/conf'
+          username: 418364620@qq.com
+          password: 6620337yue
 server:
   port: 8888
