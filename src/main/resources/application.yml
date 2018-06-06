@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config-service
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: /Users/gang/workspace/self-microservice/conf
+server:
+  port: 8888
