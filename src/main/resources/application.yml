@@ -12,5 +12,13 @@ spring:
             - '/conf'
           username: 418364620@qq.com
           password: 6620337yue
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 server:
   port: 8888
+management:
+  security:
+    enabled: false
